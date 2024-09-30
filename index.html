@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - </title>
+    <meta name="description" content="Secure login page for [Your Company/Product Name]. Access your account to manage settings, view updates, and stay connected with our services. Log in now for a personalized experience">
+    <meta name="author" content="Admin">
+    <meta name="copyright" content="FLEX2024">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="sidebar">
+                <ul>
+                        <a href="#" class="close" onclick=hidesidebar()><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="M80-240v-480h80v480H80Zm560 0-57-56 144-144H240v-80h487L584-664l56-56 240 240-240 240Z"/></svg></a>
+                        <li class="active"><a href="#" >Home</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">skills</a></li>
+                        <li class="order-last"><a href="#" >contact</a></li>
+                </ul>
+            </div>
+            <div class="navlist">
+                <ul>
+                    <li><a href="#" class="hide">Home</a></li>
+                    <li><a href="#" class="hide">skills</a></li>
+                    <li><a href="#" class="hide">contact</a></li>
+                    <li><a href="#" class="hide">services</a></li>
+                    <a href="#" onclick=showsidebar() class="open"><svg xmlns="http://www.w3.org/2000/svg" 
+                        height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed">
+                        <path d="M80-560v-320h320v320H80Zm80-80h160v-160H160v160ZM80-80v-320h320v320H80Zm80-80h160v-160H160v160Zm400-400v-320h320v320H560Zm80-80h160v-160H640v160ZM560-80v-320h320v320H560Zm80-80h160v-160H640v160ZM320-640Zm0 320Zm320-320Zm0 320Z"/></svg></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<section class="container">
+    <div class="login">
+        <div class="login-form">
+            <h1>login</h1>
+            <label for="username" class="lbl1">username</label>
+            <input type="text" id="username" class="inp1">
+            <label for="password" class="lbl1">password</label>
+            <input type="password" name="pass" id="password" class="inp1">
+            <div class="remember-me">
+            <input type="checkbox" id="remember" class="remember" required>
+            <label for="remember" class="rem" >Remember Me</label>
+            <a href="#" class="pass-forget">forgot password ?</a>
+        </div>
+
+            <input type="submit" value="login" class="login-btn">
+        </div>
+
+    </div>
+
+</section>
+</body>
+<script>
+    function showsidebar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='block';
+    }
+    function hidesidebar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='none';
+    }
+</script>
+</html>
